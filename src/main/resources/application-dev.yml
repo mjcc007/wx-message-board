@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    #url: jdbc:postgresql://192.168.14.175:5433/mjcc_message
+    url: jdbc:postgresql://47.105.164.190:5432/postgres
+    username: postgres
+    #username: root
+    password: mjcc007
+    driver-class-name: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    database: 1
+    #host: 192.168.14.175
+    host: 47.105.164.190
+    port: 6379
+    password: mjcc007
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 1000
+        max-wait: -1
+        max-idle: 20
+        min-idle: 2
+wechatapp:
+  appid: wxf5017f1bc6d311d2
+  secret: 584b9e59da29827456ea941aabf21791
+message:
+  fileSize: 4194304 #文件压缩大小(大于4兆压缩)
+  imgServerBase: http://127.0.0.1/
+  upPath: D:\\MyProjectName\\UploadData\\images #图片保存路径
+  scaleRatio: 0.20f #压缩比例
+  imageType: png,jpg,jpeg #图片类型
+
+
+
+
